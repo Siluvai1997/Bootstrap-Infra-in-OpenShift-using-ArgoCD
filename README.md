@@ -15,7 +15,7 @@ The following resources will be automatically created in your OpenShift cluster:
 - ServiceAccount
 
 ## Repository Structure
- ├── manifests/ │ ├── clustersecretstore.yaml │ ├── egress-firewall.yaml │ ├── namespace.yaml │ ├── persistentvolume.yaml │ ├── persistentvolumeclaim.yaml │ ├── serviceaccount.yaml │ └── storageclass.yaml ├── argocd-k8s-app-deploy.yaml └── README.md
+ ├── manifests/ │ ├── clustersecretstore.yaml │ ├── egress-firewall.yaml │ ├── namespace.yaml │ ├── persistentvolume.yaml │ ├── persistentvolumeclaim.yaml │ ├── serviceaccount.yaml │ └── storageclass.yaml ├── project1-argocd-appln.yaml └── README.md
 
  
 ## How to Deploy with Argo CD on OpenShift
