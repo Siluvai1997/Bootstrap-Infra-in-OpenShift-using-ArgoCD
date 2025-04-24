@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: sample-namespace
+  annotations:
+    owner: "devops-team"
+    purpose: "isolated environment for sample app"
+    argocd.argoproj.io/managed-by: argocd

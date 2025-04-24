@@ -1,0 +1,10 @@
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  name: azure-managed-premium
+provisioner: kubernetes.io/azure-disk
+parameters:
+  skuName: Premium_LRS
+  kind: Managed
+reclaimPolicy: Retain
+volumeBindingMode: Immediate

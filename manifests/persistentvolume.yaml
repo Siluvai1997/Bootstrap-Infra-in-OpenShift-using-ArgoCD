@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: azure-static-pv
+spec:
+  capacity:
+    storage: 5Gi
+  accessModes:
+    - ReadWriteOnce
+  azureDisk:
+    diskName: my-azure-disk
+    diskURI: /subscriptions/<sub-id>/resourceGroups/<rg-name>/providers/Microsoft.Compute/disks/my-azure-disk
+    kind: Managed
+  storageClassName: azure-managed-premium
+  persistentVolumeReclaimPolicy: Retain
