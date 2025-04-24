@@ -7,7 +7,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/<your-username>/<your-repo>
+    repoURL: https://github.com/Siluvai1997/Bootstrap-Infra-in-OpenShift-using-ArgoCD
     targetRevision: HEAD
     path: manifests
   destination:
