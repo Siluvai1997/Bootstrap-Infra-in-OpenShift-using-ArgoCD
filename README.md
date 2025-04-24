@@ -25,6 +25,7 @@ The following resources will be automatically created in your OpenShift cluster:
    oc apply -f project1-argocd-appln.yaml
    
 2. Verify that the Argo CD app appears in the Argo CD UI or with:
+   ```bash
    oc get applications -n argocd
 
 3. Argo CD will:
