@@ -39,5 +39,5 @@ The following resources will be automatically created in your OpenShift cluster:
 - The disk and key vault (Azure resources) already exist for use in PV and ClusterSecretStore
 - You have updated placeholder values like <your-keyvault-name>, <sub-id>, <rg-name> in the manifests
 
-## 🖼️ Architecture Diagram
+## Architecture Diagram
 ![Architecture Diagram](./Arch-diagram.png)
