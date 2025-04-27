@@ -1,8 +1,8 @@
-# Argo CD OpenShift Infrastructure Bootstrap
+## Argo CD OpenShift Infrastructure Bootstrap
 
 This repository provides the necessary YAML manifests to bootstrap foundational infrastructure components in an **OpenShift** cluster using **Argo CD**.
 
-## Components Deployed
+### Components Deployed
 
 The following resources will be automatically created in your OpenShift cluster:
 
@@ -14,11 +14,19 @@ The following resources will be automatically created in your OpenShift cluster:
 - PersistentVolumeClaim
 - ServiceAccount
 
-## Repository Structure
- ├── manifests/ │ ├── clustersecretstore.yaml │ ├── egress-firewall.yaml │ ├── namespace.yaml │ ├── persistentvolume.yaml │ ├── persistentvolumeclaim.yaml │ ├── serviceaccount.yaml │ └── storageclass.yaml ├── project1-argocd-appln.yaml └── README.md
+### Repository Structure
+- manifests/
+  - clustersecretstore.yaml
+  - egress-firewall.yaml
+  - namespace.yaml
+  - persistentvolume.yaml
+  - persistentvolumeclaim.yaml
+  - serviceaccount.yaml
+  - storageclass.yaml
+- project1-argocd-appln.yaml
+- README.md
 
- 
-## How to Deploy with Argo CD on OpenShift
+### How to Deploy with Argo CD on OpenShift
 
 1. **Deploy the Argo CD Application resource** to OpenShift:
    ```bash
@@ -33,11 +41,11 @@ The following resources will be automatically created in your OpenShift cluster:
    - Sync resources from manifests/
    - Create the namespace and all other infra components
 
-## Prerequisites
+### Prerequisites
 - Argo CD is installed in the OpenShift cluster
 - Your GitHub repo is accessible to the Argo CD controller
 - The disk and key vault (Azure resources) already exist for use in PV and ClusterSecretStore
 - You have updated placeholder values like <your-keyvault-name>, <sub-id>, <rg-name> in the manifests
 
-## Architecture Diagram
+### Architecture Diagram
 ![Architecture Diagram](./Arch-diagram.png)
